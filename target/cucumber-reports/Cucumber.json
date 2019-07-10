@@ -1,0 +1,141 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3144135988,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeSteps()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Customer place an order by purchasing an item from search",
+        "description": "",
+        "id": "automated-end2end-tests;customer-place-an-order-by-purchasing-an-item-from-search;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 241479492,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5254172297,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Home Page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2400773858,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "he search for \"dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dress\"",
+                  "offset": 14
+                }
+              ],
+              "location": "HomePageSteps.he_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5747217782,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "choose to buy the first item",
+            "match": {
+              "location": "ProductPageSteps.choose_to_buy_the_first_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7268237725,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "moves to checkout from mini cart",
+            "match": {
+              "location": "CartPageSteps.moves_to_checkout_from_mini_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4375420425,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter Natalia personal details on checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Natalia",
+                  "offset": 6
+                }
+              ],
+              "location": "CheckoutPageSteps.enter_personal_details_on_checkout_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172614113,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "place the order",
+            "match": {
+              "location": "CheckoutPageSteps.place_the_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3058919444,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify the order details",
+            "match": {
+              "location": "ConfirmationPageSteps.verify_the_order_details()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Automated End2End Tests",
+    "description": "  Description: The purpose of this feature is to test End 2 End integration.",
+    "id": "automated-end2end-tests",
+    "keyword": "Feature",
+    "uri": "src/test/resources/functionalTests/End2End_Test.feature",
+    "tags": []
+  }
+]

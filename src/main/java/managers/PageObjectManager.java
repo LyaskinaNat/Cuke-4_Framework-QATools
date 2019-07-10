@@ -4,6 +4,8 @@ package managers;
 import org.openqa.selenium.WebDriver;
 import pageObjects.*;
 
+import java.io.IOException;
+
 // Page Object Manger is used  to create the page’s object and also to make sure that the same object should not be created again and again.
 // But to use single object for all the step definition files
 
@@ -14,6 +16,7 @@ public class PageObjectManager {
     private HomePage homePage;
     private CheckoutPage checkoutPage;
     private ConfirmationPage confirmationPage;
+
 
 
    // This constructor is asking for parameter of type WebDriver. As to create an object of the Pages, this class requires a driver
@@ -41,6 +44,8 @@ public class PageObjectManager {
     public ConfirmationPage getConfirmationPage() {
         return (confirmationPage == null) ? confirmationPage = new ConfirmationPage(driver) : confirmationPage;
     }
+
+
 
 
 }

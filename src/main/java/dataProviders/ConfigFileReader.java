@@ -35,12 +35,12 @@ public class ConfigFileReader {
     }
 
     public long getImplicitlyWait() {
-        String implicitlyWait = properties.getProperty("implicitlyWait");
-        if(implicitlyWait != null) {
+        String implicitWait = properties.getProperty("implicitWait");
+        if(implicitWait != null) {
             try{
-                return Long.parseLong(implicitlyWait);
+                return Long.parseLong(implicitWait);
             }catch(NumberFormatException e) {
-                throw new RuntimeException("Not able to parse value : " + implicitlyWait + " in to Long");
+                throw new RuntimeException("Not able to parse value : " + implicitWait + " in to Long");
             }
         }
         return 30;

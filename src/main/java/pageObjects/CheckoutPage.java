@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import testDataTypes.Customer;
+import selenium.Wait;
 
 public class CheckoutPage {
 
@@ -14,8 +15,10 @@ public class CheckoutPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "#billing_first_name")
-    private WebElement txtbx_FirstName;
+    Wait wait = new Wait();
+
+    @FindBy(id = "billing_first_name")
+    public WebElement txtbx_FirstName;
 
     @FindBy(css = "#billing_last_name")
     private WebElement txtbx_LastName;
@@ -65,15 +68,16 @@ public class CheckoutPage {
     }
 
     public void fill_PersonalDetails(Customer customer) {
-        System.out.println("**************** Customer object************" + customer);
-        customerDetailsForm(txtbx_FirstName, customer.firstName);
-        customerDetailsForm(txtbx_LastName, customer.lastName);
-        customerDetailsForm(txtbx_Phone, customer.phoneNumber.mob);
-        customerDetailsForm(txtbx_Email, customer.emailAddress);
-        select_Country(customer.address.country);
-        customerDetailsForm(txtbx_City, customer.address.city);
-        customerDetailsForm(txtbx_Address, customer.address.streetAddress);
-        customerDetailsForm(txtbx_PostCode, customer.address.postCode);
+
+            customerDetailsForm(txtbx_FirstName, customer.firstName);
+            customerDetailsForm(txtbx_LastName, customer.lastName);
+            customerDetailsForm(txtbx_Phone, customer.phoneNumber.mob);
+            customerDetailsForm(txtbx_Email, customer.emailAddress);
+            select_Country(customer.address.country);
+            customerDetailsForm(txtbx_City, customer.address.city);
+            customerDetailsForm(txtbx_Address, customer.address.streetAddress);
+            customerDetailsForm(txtbx_PostCode, customer.address.postCode);
+
 
     }
 
