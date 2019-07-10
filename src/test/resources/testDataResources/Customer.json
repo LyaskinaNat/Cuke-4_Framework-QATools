@@ -1,0 +1,38 @@
+[
+  {
+    "firstName": "Natalia",
+    "lastName": "Lyaskina",
+    "age": 35,
+    "emailAddress": "natalia@Gmail.com",
+    "address": {
+      "streetAddress": "12 Victoria Court",
+      "city": "Newcastle upon Tyne",
+      "postCode": "NE12 7PE",
+      "state": "n/a",
+      "country": "United Kingdom (UK)",
+      "county": "Tyne and Wear"
+    },
+    "phoneNumber": {
+      "home": "012345678",
+      "mob": "0987654321"
+    }
+  },
+  {
+    "firstName": "Tyler",
+    "lastName": "Bell",
+    "age": 35,
+    "emailAddress": "tyler@Gmail.com",
+    "address": {
+      "streetAddress": "1 Summer Gardens",
+      "city": "Valetta",
+      "postCode": "NE12 7PE",
+      "state": "n/a",
+      "country": "United Kingdom (UK)",
+      "county": "Malta"
+    },
+    "phoneNumber": {
+      "home": "012345678",
+      "mob": "0987654321"
+    }
+  }
+]
