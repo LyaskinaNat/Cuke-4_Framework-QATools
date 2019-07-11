@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import testDataTypes.Customer;
 import selenium.Wait;
+import org.junit.Assert;
 
 public class CheckoutPage {
 
@@ -50,7 +51,13 @@ public class CheckoutPage {
 
 
     public void customerDetailsForm(WebElement element, String inputValue) {
-        element.sendKeys(inputValue);
+        try {
+            element.sendKeys(inputValue);
+        } catch (Exception e) {
+
+            Assert.fail ("Unable to to locate WebElement or/and send keys to it, Exception: " + e.getMessage());
+        }
+
     }
 
     public void select_Country(String countryName) {
@@ -60,7 +67,13 @@ public class CheckoutPage {
     }
 
     public void check_TermsAndCondition() {
-        chkbx_AcceptTermsAndCondition.click();
+        try {
+            chkbx_AcceptTermsAndCondition.click();
+        } catch (Exception e) {
+
+            Assert.fail ("Unable to to locate WebElement or/and send keys to it, Exception: " + e.getMessage());
+        }
+
     }
 
     public void clickOn_PlaceOrder() {

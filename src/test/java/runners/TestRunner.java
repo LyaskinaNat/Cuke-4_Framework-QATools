@@ -1,5 +1,6 @@
 package runners;
 
+import cucumber.TestContext;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
@@ -17,11 +18,18 @@ import java.io.IOException;
                 , "junit:target/cucumber-reports/Cucumber.xml"
                 , "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
-        monochrome = true
+        monochrome = true,
+        tags = {"@wip"}
 )
 public class TestRunner {
+
+    TestContext testContext;
+
+    public TestRunner (TestContext context) {
+        testContext = context;
+    }
     @AfterClass
-    public static void writeExtentRepoirt () throws IOException {
+    public static void writeExtentReport () throws IOException {
 
     }
 }
