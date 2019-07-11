@@ -1,12 +1,12 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 3562864701,
+              "duration": 3654899222,
               "status": "passed"
             },
             "match": {
@@ -14,22 +14,19 @@
             }
           }
         ],
-        "line": 14,
+        "line": 15,
         "name": "Customer place an order by purchasing an item from search - customer details are taken from JSON file",
         "description": "",
         "id": "automated-end2end-tests;customer-place-an-order-by-purchasing-an-item-from-search---customer-details-are-taken-from-json-file;;2",
         "after": [
           {
             "output": [
-              "Taking a screenshot for a failing step",
-              "\u003cbr\u003e",
-              "\u003ca target\u003d\"_blank\", href\u003d/Users/natalialyaskina/IdeaProjects/toolsqatutorial/test-output/Screenshots/11_7_2019_14_13.png\u003e\u003cimg src\u003d/Users/natalialyaskina/IdeaProjects/toolsqatutorial/test-output/Screenshots/11_7_2019_14_13.png height\u003d200 width\u003d300\u003e\u003c/img\u003e\u003c/a\u003e",
               "Executed by: natalialyaskina",
               "Platform: Mac OS X (x86_64) v.10.14.3",
               "Browser: CHROME v. 75.0.3770.100"
             ],
             "result": {
-              "duration": 748359219,
+              "duration": 303805672,
               "status": "passed"
             },
             "match": {
@@ -42,10 +39,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4940918076,
+              "duration": 3987325757,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "user is on Home Page",
             "match": {
               "location": "HomePageSteps.user_is_on_Home_Page()"
@@ -54,10 +51,10 @@
           },
           {
             "result": {
-              "duration": 2017304347,
+              "duration": 2574823713,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "he search for \"dress\"",
             "match": {
               "arguments": [
@@ -72,10 +69,10 @@
           },
           {
             "result": {
-              "duration": 6157467411,
+              "duration": 4175817374,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "choose to buy the first item",
             "match": {
               "location": "ProductPageSteps.choose_to_buy_the_first_item()"
@@ -84,11 +81,10 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d75.0.3770.100)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027OCS071-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1491:ab03:4fc3:d94c%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.3\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: /var/folders/fc/tvgtgbf1093...}, goog:chromeOptions: {debuggerAddress: localhost:52343}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 94fcfe9c15092447df60161db0046182\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\n\tat pageObjects.CartPage.clickOn_Cart(CartPage.java:34)\n\tat stepDefinitions.CartPageSteps.moves_to_checkout_from_mini_cart(CartPageSteps.java:19)\n\tat ✽.moves to checkout from mini cart(src/test/resources/functionalTests/End2End_Test.feature:8)\n",
-              "duration": 115989976,
-              "status": "failed"
+              "duration": 2066657865,
+              "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "moves to checkout from mini cart",
             "match": {
               "location": "CartPageSteps.moves_to_checkout_from_mini_cart()"
@@ -97,10 +93,10 @@
           },
           {
             "result": {
-              "duration": 395240,
-              "status": "skipped"
+              "duration": 4374549647,
+              "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "enter Natalia personal details on checkout page",
             "match": {
               "arguments": [
@@ -115,10 +111,10 @@
           },
           {
             "result": {
-              "duration": 277367,
-              "status": "skipped"
+              "duration": 146861943,
+              "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "place the order",
             "match": {
               "location": "CheckoutPageSteps.place_the_order()"
@@ -127,10 +123,10 @@
           },
           {
             "result": {
-              "duration": 578100,
-              "status": "skipped"
+              "duration": 3056880112,
+              "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "verify the order details",
             "match": {
               "location": "ConfirmationPageSteps.verify_the_order_details()"
@@ -148,7 +144,7 @@
         "before": [
           {
             "result": {
-              "duration": 2385567278,
+              "duration": 2203590788,
               "status": "passed"
             },
             "match": {
@@ -156,7 +152,7 @@
             }
           }
         ],
-        "line": 15,
+        "line": 16,
         "name": "Customer place an order by purchasing an item from search - customer details are taken from JSON file",
         "description": "",
         "id": "automated-end2end-tests;customer-place-an-order-by-purchasing-an-item-from-search---customer-details-are-taken-from-json-file;;3",
@@ -168,7 +164,7 @@
               "Browser: CHROME v. 75.0.3770.100"
             ],
             "result": {
-              "duration": 238401369,
+              "duration": 304014347,
               "status": "passed"
             },
             "match": {
@@ -181,10 +177,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4945230283,
+              "duration": 4461223661,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "user is on Home Page",
             "match": {
               "location": "HomePageSteps.user_is_on_Home_Page()"
@@ -193,10 +189,10 @@
           },
           {
             "result": {
-              "duration": 2609047796,
+              "duration": 2291738460,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "he search for \"dress\"",
             "match": {
               "arguments": [
@@ -211,10 +207,10 @@
           },
           {
             "result": {
-              "duration": 5278236085,
+              "duration": 4152834299,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "choose to buy the first item",
             "match": {
               "location": "ProductPageSteps.choose_to_buy_the_first_item()"
@@ -223,10 +219,10 @@
           },
           {
             "result": {
-              "duration": 2275274897,
+              "duration": 2336202425,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "moves to checkout from mini cart",
             "match": {
               "location": "CartPageSteps.moves_to_checkout_from_mini_cart()"
@@ -235,10 +231,10 @@
           },
           {
             "result": {
-              "duration": 4177903129,
+              "duration": 4136770375,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "enter Tyler personal details on checkout page",
             "match": {
               "arguments": [
@@ -253,10 +249,10 @@
           },
           {
             "result": {
-              "duration": 191435618,
+              "duration": 165987900,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "place the order",
             "match": {
               "location": "CheckoutPageSteps.place_the_order()"
@@ -265,10 +261,168 @@
           },
           {
             "result": {
-              "duration": 3048136250,
+              "duration": 3056451050,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
+            "name": "verify the order details",
+            "match": {
+              "location": "ConfirmationPageSteps.verify_the_order_details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1949128899,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeSteps()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Customer place an order by purchasing an item from search - customer details are taken from DataTable",
+        "description": "",
+        "id": "automated-end2end-tests;customer-place-an-order-by-purchasing-an-item-from-search---customer-details-are-taken-from-datatable",
+        "after": [
+          {
+            "output": [
+              "Executed by: natalialyaskina",
+              "Platform: Mac OS X (x86_64) v.10.14.3",
+              "Browser: CHROME v. 75.0.3770.100"
+            ],
+            "result": {
+              "duration": 261644027,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAndScreenShotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3897695295,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user is on Home Page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2012627902,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "he search for \"dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"dress\"",
+                  "offset": 14
+                }
+              ],
+              "location": "HomePageSteps.he_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3930517053,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "choose to buy the first item",
+            "match": {
+              "location": "ProductPageSteps.choose_to_buy_the_first_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2059781272,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "moves to checkout from mini cart",
+            "match": {
+              "location": "CartPageSteps.moves_to_checkout_from_mini_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1456850937,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "enter customer personal details  as follows on checkout page",
+            "match": {
+              "location": "CheckoutPageSteps.enter_customer_personal_details_as_follows_on_checkout_page(CustomerDataType\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "first_name",
+                  "last_name",
+                  "country",
+                  "street_address",
+                  "town",
+                  "postcode",
+                  "phone_number",
+                  "email_address"
+                ]
+              },
+              {
+                "cells": [
+                  "Natalia",
+                  "Lyaskina",
+                  "United Kingdom (UK)",
+                  "29 Duchess Street",
+                  "Newcastle",
+                  "NE12 7PE",
+                  "07815111222",
+                  "test@test.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151424112,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "place the order",
+            "match": {
+              "location": "CheckoutPageSteps.place_the_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3046635213,
+              "status": "passed"
+            },
+            "line": 29,
             "name": "verify the order details",
             "match": {
               "location": "ConfirmationPageSteps.verify_the_order_details()"
@@ -288,6 +442,15 @@
     "id": "automated-end2end-tests",
     "keyword": "Feature",
     "uri": "src/test/resources/functionalTests/End2End_Test.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

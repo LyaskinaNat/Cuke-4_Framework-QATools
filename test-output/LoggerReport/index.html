@@ -50,14 +50,6 @@
 							</a>
 						</li>
 						<li>
-							<a href="exception.html">
-							<span class="nav-icon">
-							<i class="fa fa-warning"></i>
-							</span>
-							<span class="nav-text">Exceptions</span>
-							</a>
-						</li>
-						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -102,11 +94,11 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
-										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
-										<a class="dropdown-item" href="#"><span class="tf" status="skip"><i class="fa fa-dot-circle-o text-blue"></i>Skip</span></a>
+										
+										
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 									</div>
@@ -136,31 +128,31 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="fail">
-											<div class="st fail test l0" 
-												tags=""
-												devices="">
-												<span class="tt">07.11.2019 14:12:55</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">[Automated End2End Tests] started</span>
-												
-											</div>
-											<div class="st fail test l1" 
+											<div class="tsc" status="pass">
+											<div class="st pass test l0" 
 												tags="@wip"
 												devices="">
-												<span class="tt">07.11.2019 14:12:55</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">|---[Customer place an order by purchasing an item from search - customer details are taken from JSON file] started</span>
+												<span class="tt">07.11.2019 15:56:12</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">[Automated End2End Tests] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @wip</span>
 												</span>
 												
 											</div>
-											<div class="st fail test l2" 
+											<div class="st pass test l1" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:56:12</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Customer place an order by purchasing an item from search - customer details are taken from JSON file] started</span>
+												
+											</div>
+											<div class="st pass test l2" 
 												tags="@wip"
 												devices="">
-												<span class="tt">07.11.2019 14:12:55</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">07.11.2019 15:56:12</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Customer place an order by purchasing an item from search - customer details are taken from JSON file] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @wip</span>
@@ -170,12 +162,12 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:12:55</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:12</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.BeforeSteps()] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:12:59</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:15</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.BeforeSteps()]</span>
 													
@@ -185,12 +177,12 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:12:59</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:15</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on Home Page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:13:04</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:19</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on Home Page]</span>
 													
@@ -200,12 +192,12 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:04</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:19</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When he search for "dress"] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:13:06</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:22</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When he search for "dress"]</span>
 													
@@ -215,151 +207,101 @@
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:06</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:22</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And choose to buy the first item] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:13:12</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:26</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And choose to buy the first item]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st fail test l3" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:12</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">07.11.2019 15:56:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And moves to checkout from mini cart] started</span>
 												
-												<div class="st fail">
-													<span class="tt">07.11.2019 14:13:12</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:56:28</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And moves to checkout from mini cart]</span>
 													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=75.0.3770.100)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'OCS071-MacBook-Pro.local', ip: 'fe80:0:0:0:1491:ab03:4fc3:d94c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: /var/folders/fc/tvgtgbf1093...}, goog:chromeOptions: {debuggerAddress: localhost:52343}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 94fcfe9c15092447df60161db0046182
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy17.click(Unknown Source)
-	at pageObjects.CartPage.clickOn_Cart(CartPage.java:34)
-	at stepDefinitions.CartPageSteps.moves_to_checkout_from_mini_cart(CartPageSteps.java:19)
-	at ✽.moves to checkout from mini cart(src/test/resources/functionalTests/End2End_Test.feature:8)
-</textarea></span>
-												</div>
-											</div>
-											<div class="st skip test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.11.2019 14:13:12</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter Natalia personal details on checkout page] started</span>
-												
-												<div class="st skip">
-													<span class="tt">07.11.2019 14:13:12</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter Natalia personal details on checkout page]</span>
-													
-													<span class="td">Step skipped</span>
-												</div>
-											</div>
-											<div class="st skip test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.11.2019 14:13:12</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And place the order] started</span>
-												
-												<div class="st skip">
-													<span class="tt">07.11.2019 14:13:12</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And place the order]</span>
-													
-													<span class="td">Step skipped</span>
-												</div>
-											</div>
-											<div class="st skip test l3" 
-												tags=""
-												devices="">
-												<span class="tt">07.11.2019 14:13:12</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then verify the order details] started</span>
-												
-												<div class="st skip">
-													<span class="tt">07.11.2019 14:13:12</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then verify the order details]</span>
-													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:12</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:28</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter Natalia personal details on checkout page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:56:33</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter Natalia personal details on checkout page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:56:33</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And place the order] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:56:33</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And place the order]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:56:33</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then verify the order details] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:56:36</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then verify the order details]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:56:36</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.11.2019 14:13:13</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
-													
-													<span class="td">Taking a screenshot for a failing step</span>
-												</div>
-												<div class="st info">
-													<span class="tt">07.11.2019 14:13:13</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
-													
-													<span class="td"><br></span>
-												</div>
-												<div class="st info">
-													<span class="tt">07.11.2019 14:13:13</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
-													
-													<span class="td"><a target="_blank", href=/Users/natalialyaskina/IdeaProjects/toolsqatutorial/test-output/Screenshots/11_7_2019_14_13.png><img src=/Users/natalialyaskina/IdeaProjects/toolsqatutorial/test-output/Screenshots/11_7_2019_14_13.png height=200 width=300></img></a></span>
-												</div>
-												<div class="st info">
-													<span class="tt">07.11.2019 14:13:13</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:36</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
 													
 													<span class="td">Executed by: natalialyaskina</span>
 												</div>
 												<div class="st info">
-													<span class="tt">07.11.2019 14:13:13</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:36</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
 													
 													<span class="td">Platform: Mac OS X (x86_64) v.10.14.3</span>
 												</div>
 												<div class="st info">
-													<span class="tt">07.11.2019 14:13:13</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:36</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
 													
@@ -369,7 +311,7 @@ Session ID: 94fcfe9c15092447df60161db0046182
 											<div class="st pass test l2" 
 												tags="@wip"
 												devices="">
-												<span class="tt">07.11.2019 14:13:13</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:36</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Customer place an order by purchasing an item from search - customer details are taken from JSON file] started</span>
 												<span class="category-list">
@@ -380,12 +322,12 @@ Session ID: 94fcfe9c15092447df60161db0046182
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:13</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:36</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.BeforeSteps()] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:13:15</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:38</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.BeforeSteps()]</span>
 													
@@ -395,12 +337,12 @@ Session ID: 94fcfe9c15092447df60161db0046182
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:15</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:38</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on Home Page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:13:20</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:43</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on Home Page]</span>
 													
@@ -410,12 +352,12 @@ Session ID: 94fcfe9c15092447df60161db0046182
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:20</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:43</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When he search for "dress"] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:13:23</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:45</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When he search for "dress"]</span>
 													
@@ -425,12 +367,12 @@ Session ID: 94fcfe9c15092447df60161db0046182
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:23</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:45</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And choose to buy the first item] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:13:28</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:49</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And choose to buy the first item]</span>
 													
@@ -440,12 +382,12 @@ Session ID: 94fcfe9c15092447df60161db0046182
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:28</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:49</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And moves to checkout from mini cart] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:13:30</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:52</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And moves to checkout from mini cart]</span>
 													
@@ -455,12 +397,12 @@ Session ID: 94fcfe9c15092447df60161db0046182
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:30</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:52</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter Tyler personal details on checkout page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:13:35</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:56</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter Tyler personal details on checkout page]</span>
 													
@@ -470,12 +412,12 @@ Session ID: 94fcfe9c15092447df60161db0046182
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:35</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:56</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And place the order] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:13:35</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:56</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And place the order]</span>
 													
@@ -485,12 +427,12 @@ Session ID: 94fcfe9c15092447df60161db0046182
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:35</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:56</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then verify the order details] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.11.2019 14:13:38</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:59</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then verify the order details]</span>
 													
@@ -500,28 +442,188 @@ Session ID: 94fcfe9c15092447df60161db0046182
 											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.11.2019 14:13:38</span>&nbsp;
+												<span class="tt">07.11.2019 15:56:59</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.11.2019 14:13:38</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:59</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
 													
 													<span class="td">Executed by: natalialyaskina</span>
 												</div>
 												<div class="st info">
-													<span class="tt">07.11.2019 14:13:38</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:59</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
 													
 													<span class="td">Platform: Mac OS X (x86_64) v.10.14.3</span>
 												</div>
 												<div class="st info">
-													<span class="tt">07.11.2019 14:13:38</span>&nbsp;
+													<span class="tt">07.11.2019 15:56:59</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
+													
+													<span class="td">Browser: CHROME v. 75.0.3770.100</span>
+												</div>
+											</div>
+											<div class="st pass test l1" 
+												tags="@wip"
+												devices="">
+												<span class="tt">07.11.2019 15:56:59</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Customer place an order by purchasing an item from search - customer details are taken from DataTable] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @wip</span>
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:56:59</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.BeforeSteps()] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:57:01</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.BeforeSteps()]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:57:01</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on Home Page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:57:05</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on Home Page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:57:05</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When he search for "dress"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:57:07</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When he search for "dress"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:57:07</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And choose to buy the first item] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:57:11</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And choose to buy the first item]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:57:11</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And moves to checkout from mini cart] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:57:13</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And moves to checkout from mini cart]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:57:13</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter customer personal details  as follows on checkout page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:57:13</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter customer personal details  as follows on checkout page]</span>
+													
+													<span class="td"><table class='runtime-table table-striped table'><tr><td>first_name</td><td>last_name</td><td>country</td><td>street_address</td><td>town</td><td>postcode</td><td>phone_number</td><td>email_address</td></tr><tr><td>Natalia</td><td>Lyaskina</td><td>United Kingdom (UK)</td><td>29 Duchess Street</td><td>Newcastle</td><td>NE12 7PE</td><td>07815111222</td><td>test@test.com</td></tr></table></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:57:15</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And place the order] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:57:15</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And place the order]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:57:15</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then verify the order details] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.11.2019 15:57:18</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then verify the order details]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">07.11.2019 15:57:18</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.11.2019 15:57:18</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
+													
+													<span class="td">Executed by: natalialyaskina</span>
+												</div>
+												<div class="st info">
+													<span class="tt">07.11.2019 15:57:18</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
+													
+													<span class="td">Platform: Mac OS X (x86_64) v.10.14.3</span>
+												</div>
+												<div class="st info">
+													<span class="tt">07.11.2019 15:57:18</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
 													
 													<span class="td">Browser: CHROME v. 75.0.3770.100</span>
 												</div>
