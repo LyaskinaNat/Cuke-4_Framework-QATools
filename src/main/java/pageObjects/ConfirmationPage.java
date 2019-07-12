@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.WebElement;
 
 public class ConfirmationPage {
     WebDriver driver;
@@ -20,8 +21,10 @@ public class ConfirmationPage {
     }
 
     @FindAll(@FindBy(css = ".order_item"))
-    private List<WebElement> prd_List;
+    public List<WebElement> prd_List;
 
+    @FindBy(css = ".woocommerce-order-details")
+    public WebElement orderDetails;
 
 
     public List<String> getProductNames() {

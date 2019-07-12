@@ -1,6 +1,7 @@
 package managers;
 
 import dataProviders.ConfigFileReader;
+import dataProviders.ExtentReportConfigReader;
 import dataProviders.JsonDataReader;
 
 // FileReader Manager is implemented as a Singleton
@@ -13,6 +14,7 @@ public class FileReaderManager {
     private static FileReaderManager fileReaderManager = new FileReaderManager();
     private static ConfigFileReader configFileReader;
     private static JsonDataReader jsonDataReader;
+    private static ExtentReportConfigReader extentReportConfigReader;
 
     // FileReaderManager implements a private constructor so clients cannot instantiate FileReaderManager instances
     private FileReaderManager() {
@@ -28,6 +30,10 @@ public class FileReaderManager {
 
     public ConfigFileReader getConfigReader() {
         return (configFileReader == null) ? new ConfigFileReader() : configFileReader;
+    }
+
+    public ExtentReportConfigReader getExtentReportConfigReader() {
+        return (extentReportConfigReader == null) ? new ExtentReportConfigReader() : extentReportConfigReader;
     }
 
     public JsonDataReader getJsonReader(){

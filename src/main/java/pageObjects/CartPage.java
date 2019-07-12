@@ -23,10 +23,10 @@ public class CartPage  {
     }
 
     @FindBy(css = ".cart-button")
-    private WebElement btn_Cart;
+    public WebElement btn_Cart;
 
     @FindBy(css = ".checkout-button.alt")
-    private WebElement btn_ContinueToCheckout;
+    public WebElement btn_ContinueToCheckout;
 
 
     public void clickOn_Cart() {

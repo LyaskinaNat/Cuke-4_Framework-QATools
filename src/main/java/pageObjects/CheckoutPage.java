@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import testDataTypes.Customer;
-import selenium.Wait;
 import org.junit.Assert;
 import testDataTypes.CustomerDataType;
 
@@ -21,37 +20,35 @@ public class CheckoutPage {
         PageFactory.initElements(driver, this);
     }
 
-    Wait wait = new Wait();
-
     @FindBy(id = "billing_first_name")
-    private WebElement txtbx_FirstName;
+    public WebElement txtbx_FirstName;
 
     @FindBy(css = "#billing_last_name")
-    private WebElement txtbx_LastName;
+    public WebElement txtbx_LastName;
 
     @FindBy(css = "#billing_email")
-    private WebElement txtbx_Email;
+    public WebElement txtbx_Email;
 
     @FindBy(css = "#billing_phone")
-    private WebElement txtbx_Phone;
+    public WebElement txtbx_Phone;
 
     @FindBy(id = "billing_country")
-    private WebElement select_Country;
+    public WebElement select_Country;
 
     @FindBy(css = "#billing_city")
-    private WebElement txtbx_City;
+    public WebElement txtbx_Town;
 
     @FindBy(css = "#billing_address_1")
-    private WebElement txtbx_Address;
+    public WebElement txtbx_Address;
 
     @FindBy(css = "#billing_postcode")
-    private WebElement txtbx_PostCode;
+    public WebElement txtbx_PostCode;
 
     @FindBy(id = "terms")
-    private WebElement chkbx_AcceptTermsAndCondition;
+    public WebElement chkbx_AcceptTermsAndCondition;
 
     @FindBy(css = "#place_order")
-    private WebElement btn_PlaceOrder;
+    public WebElement btn_PlaceOrder;
 
 
     public void customerDetailsForm(WebElement element, String inputValue) {
@@ -91,7 +88,7 @@ public class CheckoutPage {
         customerDetailsForm(txtbx_Phone, customer.phoneNumber.mob);
         customerDetailsForm(txtbx_Email, customer.emailAddress);
         select_Country(customer.address.country);
-        customerDetailsForm(txtbx_City, customer.address.city);
+        customerDetailsForm(txtbx_Town, customer.address.city);
         customerDetailsForm(txtbx_Address, customer.address.streetAddress);
         customerDetailsForm(txtbx_PostCode, customer.address.postCode);
 
@@ -136,7 +133,7 @@ public class CheckoutPage {
                 customerDetailsForm(txtbx_Phone, phoneNumberKey);
                 customerDetailsForm(txtbx_Email, emailAddressKey);
                 select_Country(countryKey);
-                customerDetailsForm(txtbx_City, townKey);
+                customerDetailsForm(txtbx_Town, townKey);
                 customerDetailsForm(txtbx_Address, streetAddressKey);
                 customerDetailsForm(txtbx_PostCode, postcodeKey);
 

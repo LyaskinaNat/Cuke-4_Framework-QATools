@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
@@ -19,22 +18,22 @@ public class ProductListingPage {
     }
 
     @FindBy(css = "button.single_add_to_cart_button")
-    private WebElement btn_AddToCart;
+    public WebElement btn_AddToCart;
 
     @FindAll(@FindBy(css = ".noo-product-inner"))
-    private List<WebElement> prd_List;
+    public List<WebElement> prd_List;
 
     @FindBy(id="pa_color")
-    private WebElement selectColour;
+    public WebElement selectColour;
 
     @FindBy(id="pa_size")
-    private WebElement selectSize;
+    public WebElement selectSize;
 
-    public void makeSelection(String SelectedColour, String selectedSize) {
+    public void makeSelection(int index) {
         Select colour = new Select(selectColour);
-        colour.selectByVisibleText(SelectedColour);
+        colour.selectByIndex(index);
         Select size  = new Select(selectSize);
-        size.selectByVisibleText(selectedSize);
+        size.selectByIndex(index);
     }
 
     public void clickOn_AddToCart() {

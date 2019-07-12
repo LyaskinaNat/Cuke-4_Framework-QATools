@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="66.618399">
-<testcase classname="Automated End2End Tests" name="Customer place an order by purchasing an item from search - customer details are taken from JSON file" time="24.734747">
-<system-out><![CDATA[Given user is on Home Page..................................................passed
-When he search for "dress"..................................................passed
-And choose to buy the first item............................................passed
-And moves to checkout from mini cart........................................passed
-And enter Natalia personal details on checkout page.........................passed
-And place the order.........................................................passed
-Then verify the order details...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Automated End2End Tests" name="Customer place an order by purchasing an item from search - customer details are taken from JSON file 2" time="23.113375">
-<system-out><![CDATA[Given user is on Home Page..................................................passed
-When he search for "dress"..................................................passed
-And choose to buy the first item............................................passed
-And moves to checkout from mini cart........................................passed
-And enter Tyler personal details on checkout page...........................passed
-And place the order.........................................................passed
-Then verify the order details...............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Automated End2End Tests" name="Customer place an order by purchasing an item from search - customer details are taken from DataTable" time="18.770277">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.968791">
+<testcase classname="Automated End2End Tests" name="Customer place an order by purchasing an item from search - customer details are taken from DataTable" time="21.968791">
 <system-out><![CDATA[Given user is on Home Page..................................................passed
 When he search for "dress"..................................................passed
 And choose to buy the first item............................................passed

@@ -31,19 +31,19 @@ public class ConfigFileReader {
     public String getDriverPath(){
         String driverPath = properties.getProperty("driverPath");
         if(driverPath!= null) return driverPath;
-        else throw new RuntimeException("Driver Path not specified in the Configuration.properties file for the Key:driverPath");
+        else throw new RuntimeException("Driver Path not specified in the Configuration.properties file for the Key: driverPath");
     }
 
-    public long getImplicitlyWait() {
+    public int getImplicitlyWait() {
         String implicitWait = properties.getProperty("implicitWait");
         if(implicitWait != null) {
             try{
-                return Long.parseLong(implicitWait);
+                return Integer.parseInt(implicitWait);
             }catch(NumberFormatException e) {
                 throw new RuntimeException("Not able to parse value : " + implicitWait + " in to Long");
             }
         }
-        return 30;
+        return 15;
     }
 
     public String getApplicationUrl() {
@@ -76,7 +76,20 @@ public class ConfigFileReader {
     public String getTestDataResourcePath(){
         String testDataResourcePath = properties.getProperty("testDataResourcePath");
         if(testDataResourcePath!= null) return testDataResourcePath;
-        else throw new RuntimeException("Test Data Resource Path not specified in the Configuration.properties file for the Key:testDataResourcePath");
+        else throw new RuntimeException("Test Data Resource Path not specified in the Configuration.properties file for the Key: testDataResourcePath");
+    }
+
+
+    public String getSaveScreentShotsTo(){
+        String saveScreenShotsTo = properties.getProperty("saveScreenshotsTo");
+        if(saveScreenShotsTo!= null) return saveScreenShotsTo;
+        else throw new RuntimeException("Screenshots path not specified in the Configuration.properties file for the Key: saveScreenshotsTo");
+    }
+
+    public String getSArchiveReportsTo(){
+        String archiveReportsTo = properties.getProperty("archiveReportsTo");
+        if(archiveReportsTo!= null) return archiveReportsTo;
+        else throw new RuntimeException("Archived Reports path not specified in the Configuration.properties file for the Key: archiveReportsTo");
     }
 
 }
