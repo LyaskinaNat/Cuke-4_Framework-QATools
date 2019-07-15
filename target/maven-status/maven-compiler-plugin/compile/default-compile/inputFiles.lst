@@ -7,9 +7,14 @@
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/managers/WebDriverManager.java
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/enums/DriverType.java
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/testDataTypes/Customer.java
+/Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/testDataTypes/CustomerDataType.java
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/managers/FileReaderManager.java
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/cucumber/TestContext.java
+/Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/dataProviders/ExtentReportConfigReader.java
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/managers/PageObjectManager.java
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/pageObjects/ProductListingPage.java
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/pageObjects/CheckoutPage.java
+/Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/pageObjects/ConfirmationPage.java
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/dataProviders/JsonDataReader.java
+/Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/utils/Wait.java
+/Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/main/java/utils/ExtentReportBuilder.java

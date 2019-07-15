@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import managers.FileReaderManager;
 import org.junit.Assert;
 import cucumber.TestContext;
 import cucumber.api.java.en.Then;
@@ -10,22 +11,20 @@ import utils.Wait;
 public class ConfirmationPageSteps {
     TestContext testContext;
     ConfirmationPage confirmationPage;
-    Wait wait;
+    public int customTimeout;
 
     public ConfirmationPageSteps(TestContext context) {
         testContext = context;
         confirmationPage = testContext.getPageObjectManager().getConfirmationPage();
-        wait = new Wait(context);
+        customTimeout = FileReaderManager.getInstance().getConfigReader().getImplicitlyWait();
+
     }
 
     @Then("verify the order details")
     public void verify_the_order_details() throws InterruptedException {
 
         String productName = ((String) testContext.scenarioContext.getContext(Context.PRODUCT_NAME)).toLowerCase();
-        if (wait.WaitForElementUsingCustomTimeout(confirmationPage.prd_List.get(0))) {
-            Assert.assertTrue(confirmationPage.getProductNames().stream().filter(x -> x.contains(productName)).findFirst().get().length() > 0);
-
-        }
+            Assert.assertTrue(confirmationPage.getProductNames(customTimeout).stream().filter(x -> x.contains(productName)).findFirst().get().length() > 0);
 
     }
 }

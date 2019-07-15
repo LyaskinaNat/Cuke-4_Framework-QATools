@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.968791">
-<testcase classname="Automated End2End Tests" name="Customer place an order by purchasing an item from search - customer details are taken from DataTable" time="21.968791">
-<system-out><![CDATA[Given user is on Home Page..................................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.937534">
+<testcase classname="Automated End2End Tests" name="Customer place an order by purchasing an item from search - customer details are taken from DataTable" time="19.937534">
+<failure message="java.lang.AssertionError: Unable to find the WebElement, Exception: null&#10;&#9;at org.junit.Assert.fail(Assert.java:89)&#10;&#9;at utils.Wait.WaitForElementUsingCustomTimeout(Wait.java:23)&#10;&#9;at pageObjects.CartPage.clickOn_Cart(CartPage.java:28)&#10;&#9;at stepDefinitions.CartPageSteps.moves_to_checkout_from_mini_cart(CartPageSteps.java:30)&#10;&#9;at ✽.moves to checkout from mini cart(src/test/resources/functionalTests/End2End_Test.feature:24)&#10;"><![CDATA[Given user is on Home Page..................................................passed
 When he search for "dress"..................................................passed
 And choose to buy the first item............................................passed
-And moves to checkout from mini cart........................................passed
-And enter customer personal details  as follows on checkout page............passed
-And place the order.........................................................passed
-Then verify the order details...............................................passed
-]]></system-out>
+And moves to checkout from mini cart........................................failed
+And enter customer personal details  as follows on checkout page............skipped
+And place the order.........................................................skipped
+Then verify the order details...............................................skipped
+
+StackTrace:
+java.lang.AssertionError: Unable to find the WebElement, Exception: null
+	at org.junit.Assert.fail(Assert.java:89)
+	at utils.Wait.WaitForElementUsingCustomTimeout(Wait.java:23)
+	at pageObjects.CartPage.clickOn_Cart(CartPage.java:28)
+	at stepDefinitions.CartPageSteps.moves_to_checkout_from_mini_cart(CartPageSteps.java:30)
+	at ✽.moves to checkout from mini cart(src/test/resources/functionalTests/End2End_Test.feature:24)
+]]></failure>
 </testcase>
 </testsuite>

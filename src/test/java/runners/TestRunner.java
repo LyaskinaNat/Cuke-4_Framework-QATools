@@ -28,8 +28,5 @@ public class TestRunner {
     public TestRunner (TestContext context) {
         testContext = context;
     }
-    @AfterClass
-    public static void writeExtentReport () throws IOException {
 
-    }
 }

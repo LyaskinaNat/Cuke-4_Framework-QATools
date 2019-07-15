@@ -50,6 +50,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -94,11 +102,11 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
-										
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="skip"><i class="fa fa-dot-circle-o text-blue"></i>Skip</span></a>
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 									</div>
@@ -128,23 +136,23 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
 												tags="@wip"
 												devices="">
-												<span class="tt">07.12.2019 14:18:49</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">07.12.2019 17:07:10</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">[Automated End2End Tests] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @wip</span>
 												</span>
 												
 											</div>
-											<div class="st pass test l1" 
+											<div class="st fail test l1" 
 												tags="@wip"
 												devices="">
-												<span class="tt">07.12.2019 14:18:49</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">07.12.2019 17:07:10</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">|---[Customer place an order by purchasing an item from search - customer details are taken from DataTable] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @wip</span>
@@ -154,12 +162,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.12.2019 14:18:49</span>&nbsp;
+												<span class="tt">07.12.2019 17:07:10</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.BeforeSteps()] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.12.2019 14:18:53</span>&nbsp;
+													<span class="tt">07.12.2019 17:07:13</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.BeforeSteps()]</span>
 													
@@ -169,12 +177,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.12.2019 14:18:53</span>&nbsp;
+												<span class="tt">07.12.2019 17:07:13</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on Home Page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.12.2019 14:18:57</span>&nbsp;
+													<span class="tt">07.12.2019 17:07:20</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on Home Page]</span>
 													
@@ -184,12 +192,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.12.2019 14:18:57</span>&nbsp;
+												<span class="tt">07.12.2019 17:07:20</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When he search for "dress"] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.12.2019 14:19:00</span>&nbsp;
+													<span class="tt">07.12.2019 17:07:23</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When he search for "dress"]</span>
 													
@@ -199,101 +207,135 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.12.2019 14:19:00</span>&nbsp;
+												<span class="tt">07.12.2019 17:07:23</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And choose to buy the first item] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.12.2019 14:19:04</span>&nbsp;
+													<span class="tt">07.12.2019 17:07:28</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And choose to buy the first item]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st fail test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.12.2019 14:19:04</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">07.12.2019 17:07:28</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And moves to checkout from mini cart] started</span>
 												
-												<div class="st pass">
-													<span class="tt">07.12.2019 14:19:07</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st fail">
+													<span class="tt">07.12.2019 17:07:28</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And moves to checkout from mini cart]</span>
 													
-													<span class="td"></span>
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.AssertionError: Unable to find the WebElement, Exception: null
+	at org.junit.Assert.fail(Assert.java:89)
+	at utils.Wait.WaitForElementUsingCustomTimeout(Wait.java:23)
+	at pageObjects.CartPage.clickOn_Cart(CartPage.java:28)
+	at stepDefinitions.CartPageSteps.moves_to_checkout_from_mini_cart(CartPageSteps.java:30)
+	at ✽.moves to checkout from mini cart(src/test/resources/functionalTests/End2End_Test.feature:24)
+</textarea></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.12.2019 14:19:07</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">07.12.2019 17:07:28</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter customer personal details  as follows on checkout page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.12.2019 14:19:07</span>&nbsp;
+													<span class="tt">07.12.2019 17:07:28</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter customer personal details  as follows on checkout page]</span>
 													
 													<span class="td"><table class='runtime-table table-striped table'><tr><td>first_name</td><td>last_name</td><td>country</td><td>street_address</td><td>town</td><td>postcode</td><td>phone_number</td><td>email_address</td></tr><tr><td>Natalia</td><td>Lyaskina</td><td>United Kingdom (UK)</td><td>29 Duchess Street</td><td>Newcastle</td><td>NE12 7PE</td><td>07815111222</td><td>test@test.com</td></tr></table></span>
 												</div>
+												<div class="st skip">
+													<span class="tt">07.12.2019 17:07:28</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And enter customer personal details  as follows on checkout page]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.12.2019 14:19:08</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">07.12.2019 17:07:28</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And place the order] started</span>
 												
-												<div class="st pass">
-													<span class="tt">07.12.2019 14:19:08</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">07.12.2019 17:07:28</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And place the order]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.12.2019 14:19:08</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">07.12.2019 17:07:28</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then verify the order details] started</span>
 												
-												<div class="st pass">
-													<span class="tt">07.12.2019 14:19:11</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">07.12.2019 17:07:28</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then verify the order details]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">07.12.2019 14:19:11</span>&nbsp;
+												<span class="tt">07.12.2019 17:07:28</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.12.2019 14:19:11</span>&nbsp;
+													<span class="tt">07.12.2019 17:07:29</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
+													
+													<span class="td">Taking a screenshot for a failing step</span>
+												</div>
+												<div class="st info">
+													<span class="tt">07.12.2019 17:07:29</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
+													
+													<span class="td"><br></span>
+												</div>
+												<div class="st info">
+													<span class="tt">07.12.2019 17:07:29</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
+													
+													<span class="td"><a target="_blank", href=/Users/natalialyaskina/IdeaProjects/toolsqatutorial/test-output/Screenshots/12_7_2019_17_7.png><img src=/Users/natalialyaskina/IdeaProjects/toolsqatutorial/test-output/Screenshots/12_7_2019_17_7.png height=200 width=300></img></a></span>
+												</div>
+												<div class="st info">
+													<span class="tt">07.12.2019 17:07:29</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
 													
 													<span class="td">Executed by: natalialyaskina</span>
 												</div>
 												<div class="st info">
-													<span class="tt">07.12.2019 14:19:11</span>&nbsp;
+													<span class="tt">07.12.2019 17:07:29</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
 													
 													<span class="td">Platform: Mac OS X (x86_64) v.10.14.3</span>
 												</div>
 												<div class="st info">
-													<span class="tt">07.12.2019 14:19:11</span>&nbsp;
+													<span class="tt">07.12.2019 17:07:29</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Hooks.tearDownAndScreenShotOnFailure(Scenario)]</span>
 													

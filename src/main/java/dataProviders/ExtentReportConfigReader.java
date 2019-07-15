@@ -5,8 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-import enums.DriverType;
-import enums.EnvironmentType;
+
 
 public class ExtentReportConfigReader {
     private Properties properties;

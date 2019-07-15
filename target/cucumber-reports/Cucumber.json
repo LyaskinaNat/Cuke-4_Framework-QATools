@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3529062800,
+              "duration": 3177210499,
               "status": "passed"
             },
             "match": {
@@ -21,12 +21,15 @@
         "after": [
           {
             "output": [
+              "Taking a screenshot for a failing step",
+              "\u003cbr\u003e",
+              "\u003ca target\u003d\"_blank\", href\u003d/Users/natalialyaskina/IdeaProjects/toolsqatutorial/test-output/Screenshots/12_7_2019_17_7.png\u003e\u003cimg src\u003d/Users/natalialyaskina/IdeaProjects/toolsqatutorial/test-output/Screenshots/12_7_2019_17_7.png height\u003d200 width\u003d300\u003e\u003c/img\u003e\u003c/a\u003e",
               "Executed by: natalialyaskina",
               "Platform: Mac OS X (x86_64) v.10.14.3",
               "Browser: CHROME v. 75.0.3770.100"
             ],
             "result": {
-              "duration": 241235743,
+              "duration": 874687070,
               "status": "passed"
             },
             "match": {
@@ -39,7 +42,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4059800746,
+              "duration": 7218968788,
               "status": "passed"
             },
             "line": 21,
@@ -51,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 2504329576,
+              "duration": 3424220339,
               "status": "passed"
             },
             "line": 22,
@@ -69,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 4137475231,
+              "duration": 4857517328,
               "status": "passed"
             },
             "line": 23,
@@ -81,8 +84,9 @@
           },
           {
             "result": {
-              "duration": 3035882628,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: Unable to find the WebElement, Exception: null\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat utils.Wait.WaitForElementUsingCustomTimeout(Wait.java:23)\n\tat pageObjects.CartPage.clickOn_Cart(CartPage.java:28)\n\tat stepDefinitions.CartPageSteps.moves_to_checkout_from_mini_cart(CartPageSteps.java:30)\n\tat ✽.moves to checkout from mini cart(src/test/resources/functionalTests/End2End_Test.feature:24)\n",
+              "duration": 19520515,
+              "status": "failed"
             },
             "line": 24,
             "name": "moves to checkout from mini cart",
@@ -93,8 +97,8 @@
           },
           {
             "result": {
-              "duration": 1438289026,
-              "status": "passed"
+              "duration": 2884486,
+              "status": "skipped"
             },
             "line": 25,
             "name": "enter customer personal details  as follows on checkout page",
@@ -131,8 +135,8 @@
           },
           {
             "result": {
-              "duration": 265019060,
-              "status": "passed"
+              "duration": 585804,
+              "status": "skipped"
             },
             "line": 28,
             "name": "place the order",
@@ -143,8 +147,8 @@
           },
           {
             "result": {
-              "duration": 2375020682,
-              "status": "passed"
+              "duration": 1031624,
+              "status": "skipped"
             },
             "line": 29,
             "name": "verify the order details",

@@ -3,4 +3,6 @@
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/test/java/stepDefinitions/HomePageSteps.java
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/test/java/stepDefinitions/CartPageSteps.java
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/test/java/stepDefinitions/CheckoutPageSteps.java
+/Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/test/java/stepDefinitions/Configurer.java
+/Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/test/java/stepDefinitions/ConfirmationPageSteps.java
 /Users/natalialyaskina/IdeaProjects/toolsqatutorial/src/test/java/runners/TestRunner.java

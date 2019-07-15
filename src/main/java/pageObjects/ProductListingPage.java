@@ -9,11 +9,16 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import utils.Wait;
 
 public class ProductListingPage {
+    WebDriver driver;
+    Wait wait;
 
     public ProductListingPage(WebDriver driver)
     {
+        this.driver = driver;
+        wait = new Wait();
         PageFactory.initElements(driver, this);
     }
 
@@ -23,6 +28,8 @@ public class ProductListingPage {
     @FindAll(@FindBy(css = ".noo-product-inner"))
     public List<WebElement> prd_List;
 
+    @FindBy(css= ".entry-summary")
+    public WebElement selectedProduct;
     @FindBy(id="pa_color")
     public WebElement selectColour;
 
@@ -36,16 +43,29 @@ public class ProductListingPage {
         size.selectByIndex(index);
     }
 
-    public void clickOn_AddToCart() {
-        btn_AddToCart.click();
+    public void clickOn_AddToCart(int customTimeout) {
+        if (wait.WaitForElementUsingCustomTimeout(driver,btn_AddToCart, customTimeout)) {
+            btn_AddToCart.click();
+        }
     }
 
-    public void select_Product(int productNumber) {
-        prd_List.get(productNumber).click();
+    public void select_Product(int productNumber, int customTimeout) {
+
+        if (wait.WaitForElementUsingCustomTimeout(driver,prd_List.get(productNumber), customTimeout)) {
+            prd_List.get(productNumber).click();
+        }
+
+
     }
 
-    public String getProductName(int productNumber) {
-        return prd_List.get(productNumber).findElement(By.cssSelector("h3")).getText();
+    public String getProductName(int customTimeout) {
+        String productName;
+        if (wait.ElementVisibleUsingCustomTimeout(driver,selectedProduct, customTimeout)) {
+            productName = selectedProduct.findElement(By.cssSelector("h1")).getText();
+        } else {
+            productName = "Unable to get Product Name";
+        }
+         return productName;
     }
 
 }

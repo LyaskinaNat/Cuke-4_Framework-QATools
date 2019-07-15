@@ -1,24 +1,20 @@
 package pageObjects;
 
-import cucumber.TestContext;
-import cucumber.api.Scenario;
-import managers.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import sun.jvm.hotspot.utilities.Assert;
+import utils.Wait;
+
 
 public class CartPage  {
-
-
-
+    WebDriver driver;
+    Wait wait;
 
     public CartPage(WebDriver driver) {
+        this.driver = driver;
         PageFactory.initElements(driver, this);
+        wait = new Wait();
 
     }
 
@@ -29,15 +25,19 @@ public class CartPage  {
     public WebElement btn_ContinueToCheckout;
 
 
-    public void clickOn_Cart() {
+    public void clickOn_Cart(int customTimeout) {
+        if(wait.WaitForElementUsingCustomTimeout(driver,btn_Cart, customTimeout)) {
+            btn_Cart.click();
+        }
 
-        btn_Cart.click();
 
     }
 
-    public void clickOn_ContinueToCheckout() {
+    public void clickOn_ContinueToCheckout(int customTimeout) {
+        if(wait.WaitForElementUsingCustomTimeout(driver,btn_ContinueToCheckout, customTimeout)) {
+            btn_ContinueToCheckout.click();
+        }
 
-        btn_ContinueToCheckout.click();
 
 
     }

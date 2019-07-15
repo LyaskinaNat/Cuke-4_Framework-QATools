@@ -1,25 +1,13 @@
 package managers;
 
-import java.io.*;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.concurrent.TimeUnit;
 
-import cucumber.api.Scenario;
-import org.apache.commons.io.FileUtils;
-import org.junit.Assert;
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import enums.DriverType;
 import enums.EnvironmentType;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import pageObjects.CartPage;
 
 public class WebDriverManager {
     public  WebDriver driver;
